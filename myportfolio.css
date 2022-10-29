@@ -99,9 +99,11 @@ body{
 }
 .navbar{
     background-color: #0d0d0d;
+    
 }
-.navbar-brand{
+.navbar h1{
     font-style: italic;
-    font-family: florence;
+    font-family: "Sofia", sans-serif;
     color: rgb(218, 120, 120);
+    padding: 10px;
 }
