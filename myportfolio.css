@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins&family=Raleway:ital,wght@0,500;1,400&display=swap');
 *{
-    box-sizing: border-box;
-}
-body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 /* shwocase*/
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding-left: 30px;
     height: 500px; /* Should be removed. Only for demonstration */
+    margin: 0;
   }
 .row:after {
     content: "";
@@ -32,6 +32,7 @@ body{
 /* text-animation */
 .wrapper{
     display: flex;
+    background-image: url("img/background.tiff");
 }
 
 .wrapper .text-dark{
@@ -75,7 +76,7 @@ body{
 
 .run-text li span{
     position: relative;
-    margin: 5px 0;
+    margin: 5px 15px;
     line-height: 90px;
 }
 .run-text li span::after{
@@ -97,13 +98,126 @@ body{
     left: 0;
     }
 }
+/* navbar */
 .navbar{
-    background-color: #0d0d0d;
-    
+    background-color: #2f0303d4;    
 }
 .navbar h1{
     font-style: italic;
     font-family: "Sofia", sans-serif;
     color: rgb(218, 120, 120);
     padding: 10px;
+    text-align: center;
+}
+/* honeycomb */
+.hexagon-body{
+  color: hsl(0, 0%, 10%);
+  background: linear-gradient(18deg, rgb(218, 120, 120), #4e0b0b);
+  border-top: 5px solid rgb(218, 120, 120);
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  padding-top: 100px;
+  
+}
+ /*.hexagon {
+  position: relative;
+  display: inline-block;
+  left/right margin approx. 25% of .hexagon width + spacing 
+  margin: 1px 18px;
+  background-color: hsl(220, 75%, 75%);
+  text-align: center;
+}*/
+.hexagon {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: 1px 18px;
+  color: white;
+  background: linear-gradient(-180deg, white, #fda3b2);
+  display: inline-block;
+  transition: 0.5s;
+}
+.hexagon, .hexagon::before, .hexagon::after {
+  /* easy way: height is width * 1.732
+  actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
+  remove border-radius for sharp corners on hexagons */
+  width: 67px;
+  height: 116px;
+}
+.hexagon:before,
+.hexagon:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+.hexagon::before {
+  position: absolute;
+  left: 0;
+  transform: rotateZ(-60deg);
+}
+.hexagon::after {
+  position: absolute;
+  left: 0;
+  transform: rotateZ(60deg);
+}
+.hexagon:nth-child(even) {
+  /* top approx. 50% of .hexagon height + spacing */
+  top: 59px;
+}
+.hexanone {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 116px;
+  margin: 1px 18px;
+}
+.hexanone:nth-child(even) {
+  top: 59px;
+}
+.hexagontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  z-index: 100;
+}
+.ibws-fix {
+  /* inline-block whitespace fix */
+  font-size: 0;
+}
+.hexagon:not(.nohover):hover {
+  border-radius: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.hexagon:not(.nohover):hover:before {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.hexagon:not(.nohover):hover:after {
+  border-radius: 50px;
+  transition: 0.5s;
+} 
+.hexagontent i {
+  z-index: 1;
+  margin: auto;
+  font-size: 50px;
+  color: transparent;
+  background: linear-gradient(18deg, rgb(218, 120, 120), #4e0b0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+} 
+.hexagontent h3 {
+  color: rgb(218, 120, 120);
+  font-family: "Sofia", sans-serif;
 }
