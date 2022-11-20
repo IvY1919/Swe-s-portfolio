@@ -32,10 +32,10 @@
 /* text-animation */
 .wrapper{
     display: flex;
-    background-image: url("img/background.tiff");
+
 }
 
-.wrapper .text-dark{
+ .wrapper p{
     color: rgb(19, 19, 18);
     font-size: 60px;
     font-weight: 400;
@@ -77,7 +77,7 @@
 .run-text li span{
     position: relative;
     margin: 5px 15px;
-    line-height: 90px;
+    line-height: 80px;
 }
 .run-text li span::after{
     content: "";
@@ -98,6 +98,15 @@
     left: 0;
     }
 }
+
+.p_text{
+  text-align: center;
+  font-size: 25px;
+  padding: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color:rgb(218, 120, 120);
+}
 /* navbar */
 .navbar{
     background-color: #2f0303d4;    
@@ -112,23 +121,13 @@
 /* honeycomb */
 .hexagon-body{
   color: hsl(0, 0%, 10%);
-  background: linear-gradient(18deg, rgb(218, 120, 120), #4e0b0b);
-  border-top: 5px solid rgb(218, 120, 120);
+  background: linear-gradient(18deg, rgb(219, 140, 140), #4e0b0b);
+  border-top: 5px solid  rgb(219, 140, 140);
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  padding: 100px;
-  padding-top: 100px;
-  
+  padding: 100px;  
 }
- /*.hexagon {
-  position: relative;
-  display: inline-block;
-  left/right margin approx. 25% of .hexagon width + spacing 
-  margin: 1px 18px;
-  background-color: hsl(220, 75%, 75%);
-  text-align: center;
-}*/
 .hexagon {
   position: relative;
   width: 46%;
@@ -217,7 +216,30 @@
   background-clip: text;
   -webkit-background-clip: text;
 } 
-.hexagontent h3 {
+.hexagontent i:active{
+  font-size: 60px;
+  transition: 0.5s;
+}
+.hexagontent h4 {
   color: rgb(218, 120, 120);
   font-family: "Sofia", sans-serif;
 }
+.hexagon img{
+  width: 136px;
+  height: 117px;
+  clip-path:polygon(0% 50%,25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  float: left;
+  transform: translate(-15.5%,0%);
+  opacity: 85%;
+}
+.hexagon:not(.nohover):active {
+background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
+}
+.hexagon:not(.nohover):active:before  {
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945),#fd8599e7) ;
+}
+.hexagon:not(.nohover):active:after  {
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7) ;
+}
+
+/* Modal */
