@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myportfolio.css">
+    <script src="myportfolio.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,8 +50,9 @@
         <div class="hexagontent"><img src="img/9.jpg"></div>
       </div>
       <div class="hexagon">
-        <div class="hexagontent"><i class="fas fa-laugh-wink"></i>
+        <div class="hexagontent" id="modalBtn-about"><i class="fas fa-laugh-wink"></i>
           <h4>About</h4>
+
         </div>
       </div>
       <div class="hexagon nohover">
@@ -128,6 +130,23 @@
     </div>
   </div>
   <!--Modal-->
+  <!-- About Modal -->
+<div id="simpleModal" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+      <span class="closeBtn" id="closeBtn">&times;</span>
+      <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+      <p>Hello.... I am a modal.this is some paragraph.sffeasdfasdfasdffersdfadfadfefasdfadsf</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+  </div>
+ </div>
 
+<!--end About modal-->
+  <script src="myportfolio.js">  </script>
 </body>
 </html>
