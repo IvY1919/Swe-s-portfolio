@@ -259,7 +259,7 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
 .modal-content{
   background-color: white;
   margin: 10% auto;
-  padding: 20px;
+  padding: 0px;
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
@@ -273,6 +273,7 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   color: #ccc;
   float: right;
   font-size: 40px;
+  margin-right: 20px;
   transition: transform .25s,opacity .24s;
 }
 .closeBtn:hover,.closeBtn:focus{
@@ -283,9 +284,12 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
 .closeBtn:hover{
   transform: rotate(90deg);
 }
-
 .modal-header{
-  background:coral;
+  background-color: rgb(218, 120, 120);
   padding: 15px;
   color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
