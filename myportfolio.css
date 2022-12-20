@@ -109,7 +109,7 @@
 }
 /* navbar */
 .navbar{
-    background-color: #2f0303d4;    
+    background-color: #6b0718;    
 }
 .navbar h1{
     font-style: italic;
@@ -121,7 +121,7 @@
 /* honeycomb */
 .hexagon-body{
   color: hsl(0, 0%, 10%);
-  background: linear-gradient(18deg, rgb(219, 140, 140), #4e0b0b);
+  background: linear-gradient(18deg, rgb(219, 140, 140),#821326,#6b0718);
   border-top: 5px solid  rgb(219, 140, 140);
   justify-content: center;
   text-align: center;
@@ -285,11 +285,52 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   transform: rotate(90deg);
 }
 .modal-header{
-  background-color: rgb(218, 120, 120);
-  padding: 15px;
-  color: white;
+  background-color:  #6b0718;
+  color: #ffffff;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
+/* moodlebody */
+.modal-content{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+.skill-txt{
+  padding: 10px;
+}
+/*Skill grid */
+.skill-row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.skill-col{
+  float: left;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+  height: 265px;
+}
+.skill-1-col1,.skill-2-col2,.skill-3-col1{
+  background: linear-gradient(360deg,  rgb(219, 140, 140),#821326,#6b0718);
+  color: #6b0718;
+  padding: 0px;
+  margin: 0;
+  font-size: 25px;
+}
+.skill-1-col2,.skill-2-col1,.skill-3-col2{
+  background: rgb(255, 253, 253);
+}
+.skill-col i {
+  z-index: 1;
+  margin: auto;
+  font-size: 200px;
+  color: transparent;
+  background: linear-gradient(180deg, #821326,rgb(219, 140, 140));
+  background-clip: text;
+  -webkit-background-clip: text;
+} 
+
