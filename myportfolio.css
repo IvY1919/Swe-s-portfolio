@@ -311,7 +311,6 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   float: left;
   width: 50%;
   padding: 0px;
-  text-align: center;
   height: 265px;
 }
 .skill-1-col1,.skill-2-col2,.skill-3-col1{
@@ -319,10 +318,17 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   color: #6b0718;
   padding: 0px;
   margin: 0;
+  text-align: center;
   font-size: 25px;
 }
 .skill-1-col2,.skill-2-col1,.skill-3-col2{
   background: rgb(255, 253, 253);
+  color:#6b0718;
+}
+ul{
+  padding: 20px;
+  font-size: 25px;
+  margin: 40px 50px;
 }
 .skill-col i {
   z-index: 1;
