@@ -109,7 +109,7 @@
 }
 /* navbar */
 .navbar{
-    background-color: #6b0718;    
+    background-color: #4e0b0b;    
 }
 .navbar h1{
     font-style: italic;
@@ -121,7 +121,7 @@
 /* honeycomb */
 .hexagon-body{
   color: hsl(0, 0%, 10%);
-  background: linear-gradient(18deg, rgb(219, 140, 140),#821326,#6b0718);
+  background: linear-gradient(18deg, rgb(219, 140, 140), #4e0b0b);
   border-top: 5px solid  rgb(219, 140, 140);
   justify-content: center;
   text-align: center;
@@ -255,6 +255,7 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+  
 }
 .modal-content{
   background-color: white;
@@ -269,6 +270,7 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   from{ opacity: 0;}
   to{opacity: 1;}
 }
+
 .closeBtn{
   color: #ccc;
   float: right;
@@ -285,21 +287,41 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   transform: rotate(90deg);
 }
 .modal-header{
-  background-color:  #6b0718;
-  color: #ffffff;
+  background-color: #821326;
+  padding: 10px;
+  color: white;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-
+/*modal animatiion*/
+.modal-body{
+  animation-duration: 1s;
+  animation-name: slideIn;
+}
+@keyframes slideIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  from{
+    margin-top: -2%;
+  }
+  to{
+    margin-top:0%;
+  };
+}
 /* moodlebody */
 .modal-content{
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 .skill-txt{
-  padding: 10px;
+  text-align: center;
+  padding: 7px;
 }
 /*Skill grid */
 .skill-row::after{
@@ -325,11 +347,6 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7); ;
   background: rgb(255, 253, 253);
   color:#6b0718;
 }
-ul{
-  padding: 20px;
-  font-size: 25px;
-  margin: 40px 50px;
-}
 .skill-col i {
   z-index: 1;
   margin: auto;
@@ -339,4 +356,9 @@ ul{
   background-clip: text;
   -webkit-background-clip: text;
 } 
+.language{   
+    font-size: 25px;
+    margin: 8px 50px;
+    
+}
 
