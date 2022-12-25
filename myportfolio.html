@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Swe's Portfolio</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
         </div>
       </div>
       <div class="hexagon nohover">
-        <div class="hexagontent"><img src="img/15.jpg"></div>
+        <div class="hexagontent"><img src="img/cat1.jpg"></div>
       </div>
       <div class="hexagon nohover">
         <div class="hexagontent"><img src="img/9.jpg"></div>
@@ -55,13 +56,13 @@
         </div>
       </div>
       <div class="hexagon nohover">
-        <div class="hexagontent"><img src="img/10.jpg"></div>
+        <div class="hexagontent cat-img"><img src="img/10.jpg"></div>
       </div>
       <div class="hexagon nohover">
         <div class="hexagontent"><img src="img/14.jpg"></div>
       </div>
       <div class="hexagon nohover">
-        <div class="hexagontent"><img src="img/21.jpg"></div>
+        <div class="hexagontent"><img src="img/cat.jpg"></div>
       </div>
       <div class="hexagon">
         <div class="hexagontent" id="modalBtn-Prj"><i class="fa fa-laptop"></i>
@@ -72,7 +73,7 @@
 
     <div class="ibws-fix">
       <div class="hexagon">
-        <div class="hexagontent" id="modalBtn-Facts"><i class="fa fa-paw"></i>
+        <div class="hexagontent" id="modalBtn-Facts"><i class="fa-solid fa-fingerprint"></i>
           <h4>Facts</h4>
         </div>
       </div>
@@ -145,21 +146,7 @@
   </div>
  </div>
 
-  <!-- Contact Modal -->
-<div id="ContactModal" class="modal">
-  <div class="modal-content">
-      <div class="modal-header">
-      <span class="closeBtn" id="closeBtn1">&times;</span>
-      <h2>Contact</h2>
-      </div>
-      <div class="modal-body">
-      <p>Hello.... I am a Contact modal.this is some paragraph.sffeasdfasdfasdffersdfadfadfefasdfadsf</p>
-      </div>
-      <div class="modal-footer">
-        <h3>Modal Footer</h3>
-      </div>
-  </div>
-</div>
+
  <!-- skill Modal -->
 <div id="SkillModal" class="modal">
   <div class="modal-content">
@@ -167,11 +154,11 @@
       <span class="closeBtn" id="closeBtnskill">&times;</span>
       <h2>Skills</h2>
       </div>
-      <div class="modal-body">
+      <div class="modal-body skill-body">
         <h4 class="skill-txt">These are my skills from education, self-learning and work experiences.</h4>
       <div class="skill-row">
         <div class="skill-col skill-1-col1">
-          <i class="fa fa-code" aria-hidden="true"></i><h4>Web Designing</h4> 
+          <i class="fa fa-code" aria-hidden="true"></i><h4>Web</h4> 
         </div>
         <div class="skill-col skill-1-col2">
 
@@ -180,21 +167,27 @@
       <div class="skill-row">        
         <div class="skill-col skill-2-col1"> </div>
         <div class="skill-col skill-2-col2">
-          <i class="fa fa-laptop" aria-hidden="true"></i><h4>Programming</h4>
+          <i class="fa fa-laptop" aria-hidden="true"></i><h4>Designing</h4>
+        </div>
+      </div>
+      <div class="skill-row">        
+        <div class="skill-col skill-3-col1"><i class="fa-solid fa-laptop-code"></i><h4>Other</h4> </div>
+        <div class="skill-col skill-3-col2">
+            
         </div>
       </div>
       <div class="skill-row"></div>
-        <div class="skill-col skill-3-col1">
-          <i class="fa fa-language" style="padding: 10px;" aria-hidden="true"></i><h4>Language</h4>
-        </div>
-        <div class="skill-col skill-3-col2">
+        <div class="skill-col skill-4-col1">
           <h2 style="font-size: 23px; margin-top: 30px; margin-left: 25px;">I can communicate with 4 languages.</h2>
-        <ul class="language">
+          <ul class="language">
             <li>Burmese <small>(Mother language)</small></li>
             <li>English</li>
             <li>Chinese</li>
             <li>Japanese</li>
-        </ul>  
+          </ul>
+        </div>
+        <div class="skill-col skill-4-col2">
+          <i class="fa fa-language" style="padding: 10px;" aria-hidden="true"></i><h4>Language</h4>
      </div>
    </div>
   </div>
@@ -218,21 +211,68 @@
 
    <!-- Facts Modal -->
 <div id="FactsModal" class="modal">
-  <div class="modal-content">
+  <div class="modal-content facts-modal">
       <div class="modal-header">
       <span class="closeBtn" id="closeBtnsFacts">&times;</span>
       <h2>Facts</h2>
       </div>
       <div class="modal-body">
-          <p>Hello.... I am a Facts modal</p>
+          <div class="fun-container">
+            
+              <div class="fact-box fact-box-row"> 
+                <div class="fact-box-col1"><i class="fa-solid fa-check"></i></div>
+                <div class="fact-box-col2"><p>Always starving to create the unexpected by challenging.</p></div> 
+              </div>
+            
+            
+              <div class="fact-box fact-box-row"> 
+                <div class="fact-box-col1"><a href="https://www.tiktok.com/@helloha981?_t=8YTEWKKIcTp&_r=1"><i class="fa-brands fa-tiktok"></i></a></div>
+                <div class="fact-box-col2"><p>like creating short animations and upload them on my tiktok acc.You can check by clicking the tiktok icon!</p></div>             
+               </div>
+            
+            
+              <div class="fact-box fact-box-row"> 
+               <div class="fact-box-col1"><i class="fa-solid fa-pen-ruler"></i></div>
+               <div class="fact-box-col2"><p>Drawing and gaming are my hobby.</p></div>             
+              </div>
+            
+              <div class="fact-box fact-box-row">        
+                <div class="fact-box-col1"><i class="fa-solid fa-paw"></i></div>
+                 <div class="fact-box-col2"><p>Love animals! (including exotic animals)</p></div>             
+              </div>
+            
+              <div class="fact-box fact-box-row">        
+                <div class="fact-box-col1"><i class="fa-solid fa-earth-americas"></i></div>
+                 <div class="fact-box-col2"><p>love to travel with friends!</p></div>             
+              </div>
+            
+             
+                <div class="fact-box fact-box-row">        
+                <div class="fact-box-col1"><i class="fa-solid fa-mug-hot"></i></div>
+                 <div class="fact-box-col2"><p>coffee is essential for my daily routine!</p></div>             
+              </div>               
+            
+          </div>
         </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-    </div>
+      </div>
    </div>
 
-<!--end About modal-->
+  <!-- Contact Modal -->
+  <div id="ContactModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+        <span class="closeBtn" id="closeBtn1">&times;</span>
+        <h2>Contact Me!</h2>
+        </div>
+        <div class="modal-body contact-modal ">
+           <p>adfadf</p>
+        </div>
+        <div class="modal-footer">
+          <h3>adfadfdfdf</h3>
+        </div>
+    </div>
+  </div>
+   <!--end About modal-->
   <script src="myportfolio.js">  </script>
 </body>
 </html>
