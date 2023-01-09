@@ -280,7 +280,8 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
   transition: transform .25s,opacity .24s;
 }
 .closeBtn:hover,.closeBtn:focus{
- color: black;
+ color: #fd8599e7;
+ text-shadow: 0 0 5px #fd8599e7;
  text-decoration: none;
  cursor: pointer;
 }
@@ -322,6 +323,12 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
   font-size: 18px;
   background-color: white;
 }
+.skill-body{
+  background: linear-gradient(360deg, #fdb9c4,  rgb(219, 140, 140));
+  height: auto;
+  color: #6b0718;
+
+}
 .skill-txt{
   text-align: center;
   padding: 7px;
@@ -340,7 +347,6 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
 }
 .skill-1-col1,.skill-2-col2,.skill-3-col1,.skill-4-col2{
   background: linear-gradient(360deg,  rgb(219, 140, 140),#821326,#6b0718);
-  color: #6b0718;
   padding: 0px;
   margin: 0;
   text-align: center;
@@ -348,7 +354,6 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
 }
 .skill-1-col2,.skill-2-col1,.skill-3-col2,.skill-4-col1{
   background: rgb(255, 253, 253);
-  color:#6b0718;
 }
 .skill-col i {
   z-index: 1;
@@ -522,14 +527,14 @@ label{
   background-color: #6b0718;
   text-align: center;
   padding: 4px;
-  height: 70px;
+  height: auto;
 }
 .modal-contact-footer ul {
  justify-content: center;
  display: flex;
 }
 
-.modal-contact-footer ul li {
+.modal-contact-footer ul li ,.modal-abt-footer ul li{
   list-style: none;
   margin: 0 15px;
 }
@@ -562,12 +567,12 @@ label{
   z-index: -1;
 }
 
-.modal-contact-footer ul li a:hover::before,.send-btn:hover::before {
+.modal-contact-footer ul li a:hover::before,.send-btn:hover::before{
   transform: scale(1.1);
   box-shadow: 0 0 15px #fd8599e7;
 }
 
-.modal-contact-footer ul li a:hover,.send-btn:hover {
+.modal-contact-footer ul li a:hover,.send-btn:hover{
   color: #fd8599e7;
   box-shadow: 0 0 5px #fd8599e7;
   text-shadow: 0 0 5px #fd8599e7;
@@ -607,4 +612,20 @@ label{
     width: 200px;
     height: 306px;
   }
+}
+.modal-abt-footer ul{
+   justify-content: center;
+   font-size: 20px;
+   display: flex;
+   padding: 10px;
+}
+.modal-abt-footer a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 25px;
+}
+.modal-abt-footer a:hover {
+  color:  #fd8599e7;
+  transition: 0.5s;
+  text-shadow: 0 0 5px #fd8599e7;
 }
