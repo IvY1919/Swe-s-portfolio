@@ -11,11 +11,11 @@
     float: left;
     width: 50%;
     padding-left: 30px;
-    height: 500px; /* Should be removed. Only for demonstration */
+    height: 500px;
     margin: 0;
   }
   .img-col{
-    padding: 0px;
+    margin: 0;
   }
 .row:after {
     content: "";
@@ -111,7 +111,10 @@
 }
 /* navbar */
 .navbar{
-    background-color: #4e0b0b;    
+    background-color: #4e0b0b;   
+    padding: 0;
+    margin: 0; 
+    height: auto;
 }
 .navbar h1{
     font-style: italic;
@@ -889,21 +892,21 @@ border-color: transparent transparent transparent #202426;
   100%{ width:99%; }
 }
 .bar-fill-english{
-  width: 75%;
+  width: 80%;
   border-radius: 5px;
   background-color: #8f1414;
-  animation: bar-fill-75 1.5s ease-out;
-  -moz-animation: bar-fill-75 1.5s ease-out;
-  -webkit-animation: bar-fill-75 1.5s ease-out;
+  animation: bar-fill-80 1.5s ease-out;
+  -moz-animation: bar-fill-80 1.5s ease-out;
+  -webkit-animation: bar-fill-80 1.5s ease-out;
 }
 
 .bar-fill-jp{
-  width: 65%;
+  width: 70%;
   border-radius: 5px;
-  background-color: #ca1f1f;
-  animation: bar-fill-65 1.5s ease-out;
-  -moz-animation: bar-fill-65 1.5s ease-out;
-  -webkit-animation: bar-fill-65 1.5s ease-out;
+  background-color: #c04343;
+  animation: bar-fill-70 1.5s ease-out;
+  -moz-animation: bar-fill-70 1.5s ease-out;
+  -webkit-animation: bar-fill-70 1.5s ease-out;
 }
 
 .bar-fill-html{
@@ -913,6 +916,30 @@ border-color: transparent transparent transparent #202426;
   animation: bar-fill-75 1.5s ease-out;
   -moz-animation: bar-fill-75 1.5s ease-out;
   -webkit-animation: bar-fill-75 1.5s ease-out;
+}
+@keyframes bar-fill-80 {
+  0%{ width:0%; }
+  100%{ width:80%; }
+}
+@-moz-keyframes bar-fill-80 {
+  0%{ width:0%; }
+  100%{ width:80%; }
+}
+@-webkit-keyframes bar-fill-80 {
+  0%{ width:0%; }
+  100%{ width:80%; }
+}
+@keyframes bar-fill-70 {
+  0%{ width:0%; }
+  100%{ width:70%; }
+}
+@-moz-keyframes bar-fill-70 {
+  0%{ width:0%; }
+  100%{ width:70%; }
+}
+@-webkit-keyframes bar-fill-70 {
+  0%{ width:0%; }
+  100%{ width:70%; }
 }
 @keyframes bar-fill-75 {
   0%{ width:0%; }
@@ -925,6 +952,14 @@ border-color: transparent transparent transparent #202426;
 @-webkit-keyframes bar-fill-75 {
   0%{ width:0%; }
   100%{ width:75%; }
+}
+.bar-fill-chinese{
+  width: 75%;
+  border-radius: 5px;
+  background-color: #ca1f1f;
+  animation: bar-fill--75 1.5s ease-out;
+  -moz-animation: bar-fill--75 1.5s ease-out;
+  -webkit-animation: bar-fill--75 1.5s ease-out;
 }
 .bar-fill-JS{
   width: 65%;
@@ -1001,4 +1036,7 @@ border-color: transparent transparent transparent #202426;
   animation: bar-fill--65 1.5s ease-out;
   -moz-animation: bar-fill--65 1.5s ease-out;
   -webkit-animation: bar-fill--65 1.5s ease-out;
+}
+.wrapper-full{
+  min-height: 100%;
 }
