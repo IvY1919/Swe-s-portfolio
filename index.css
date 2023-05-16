@@ -479,7 +479,7 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
   height: auto;
   padding: 10px;
   background-image: url("img/sky1.jpg");
-  filter: brightness(80%);
+  filter: brightness(90%);
   background-size: cover;
 }
 .col-50{
