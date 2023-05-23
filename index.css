@@ -117,8 +117,9 @@
     height: auto;
 }
 .navbar h1{
-    font-style: italic;
-    font-family: "Sofia", sans-serif;
+    /*font-style: italic;
+    font-family: "Sofia", sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     color: rgb(218, 120, 120);
     padding: 10px;
     text-align: center;
