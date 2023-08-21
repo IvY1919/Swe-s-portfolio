@@ -729,6 +729,9 @@ label{
 .thumbnail--quizzo{
   background-image: url("img/quizzo.PNG");
 }
+.thumbnail--stt{
+  background-image: url("img/stt.PNG");
+}
 
 .thumbnail__overlay {
   position: relative;
@@ -1126,12 +1129,12 @@ border-color: transparent transparent transparent #202426;
   border: 5px solid #cc5959;
 }
 .card:nth-child(3), .card:nth-child(3):before{
-  background: #cc5959;
-  border: 5px solid #cc5959;
+  background: #4e0b0b;
+  border: 5px solid #4e0b0b;
 }
 .card:nth-child(4), .card:nth-child(4):before{
-  background: #4e0b0b;
-  border: 5px solid  #4e0b0b;
+  background: #cc5959;
+  border: 5px solid  #cc5959;
 }
 .card:nth-child(5), .card:nth-child(5):before{
   background: #4e0b0b;
@@ -1140,6 +1143,10 @@ border-color: transparent transparent transparent #202426;
 .card:nth-child(6), .card:nth-child(6):before{
   background: #cc5959;
   border: 5px solid  #cc5959;
+}
+.card:nth-child(7), .card:nth-child(7):before{
+  background: #4e0b0b;
+  border: 5px solid  #4e0b0b;
 }
 
 .card:nth-child(even) .card-body:before{
