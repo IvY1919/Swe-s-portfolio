@@ -364,6 +364,9 @@ background: linear-gradient(-180deg, rgba(255, 255, 255, 0.945), #fd8599e7);
   padding: 0px; 
   height:300px;
 }
+.skill-1-col2,.skill-1-col1{
+  height:350px;
+}
 .skill-1-col1,.skill-2-col2,.skill-3-col1,.skill-4-col2{
   width: 30%;
   background: linear-gradient(360deg,  rgb(219, 140, 140),#821326,#6b0718);
