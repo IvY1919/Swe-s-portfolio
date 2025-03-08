@@ -879,52 +879,49 @@ border-color: transparent transparent transparent #202426;
   position: absolute;
   font-size: 12px;
 }
-.bar-fill-burmese{
+
+@keyframes bar-fill-99 {
+  0%{ width:0%; }
+  100%{ width:99%; }
+}
+@-moz-keyframes bar-fill-99 {
+  0%{ width:0%; }
+  100%{ width:99%; }
+}
+@-webkit-keyframes bar-fill-99 {
+  0%{ width:0%; }
+  100%{ width:99%; }
+}
+.bar-fill-99{
   width: 99%;
   border-radius: 5px;
   background-color: #4e0b0b;
-  animation: bar-fill-burmese 1.5s ease-out;
-  -moz-animation: bar-fill-burmese 1.5s ease-out;
-  -webkit-animation: bar-fill-burmese 1.5s ease-out;
-}
-@keyframes bar-fill-burmese {
-  0%{ width:0%; }
-  100%{ width:99%; }
-}
-@-moz-keyframes bar-fill-burmese {
-  0%{ width:0%; }
-  100%{ width:99%; }
-}
-@-webkit-keyframes bar-fill-burmese {
-  0%{ width:0%; }
-  100%{ width:99%; }
-}
-.bar-fill-english{
-  width: 80%;
-  border-radius: 5px;
-  background-color: #8f1414;
-  animation: bar-fill-80 1.5s ease-out;
-  -moz-animation: bar-fill-80 1.5s ease-out;
-  -webkit-animation: bar-fill-80 1.5s ease-out;
+  animation: bar-fill-99 1.5s ease-out;
+  -moz-animation: bar-fill-99 1.5s ease-out;
+  -webkit-animation: bar-fill-99 1.5s ease-out;
 }
 
-.bar-fill-jp{
-  width: 70%;
+@keyframes bar-fill-85 {
+  0%{ width:0%; }
+  100%{ width:85%; }
+}
+@-moz-keyframes bar-fill-85 {
+  0%{ width:0%; }
+  100%{ width:85%; }
+}
+@-webkit-keyframes bar-fill-85 {
+  0%{ width:0%; }
+  100%{ width:85%; }
+}
+.bar-fill-85{
+  width: 85%;
   border-radius: 5px;
-  background-color: #c04343;
-  animation: bar-fill-70 1.5s ease-out;
-  -moz-animation: bar-fill-70 1.5s ease-out;
-  -webkit-animation: bar-fill-70 1.5s ease-out;
+  background-color: #701515;
+  animation: bar-fill-85 1.5s ease-out;
+  -moz-animation: bar-fill-85 1.5s ease-out;
+  -webkit-animation: bar-fill-85 1.5s ease-out;
 }
 
-.bar-fill-html{
-  width: 75%;
-  border-radius: 5px;
-  background-color: #4e0b0b;
-  animation: bar-fill-75 1.5s ease-out;
-  -moz-animation: bar-fill-75 1.5s ease-out;
-  -webkit-animation: bar-fill-75 1.5s ease-out;
-}
 @keyframes bar-fill-80 {
   0%{ width:0%; }
   100%{ width:80%; }
@@ -937,6 +934,36 @@ border-color: transparent transparent transparent #202426;
   0%{ width:0%; }
   100%{ width:80%; }
 }
+.bar-fill-80{
+  width: 80%;
+  border-radius: 5px;
+  background-color: #942626;
+  animation: bar-fill-80 1.5s ease-out;
+  -moz-animation: bar-fill-80 1.5s ease-out;
+  -webkit-animation: bar-fill-80 1.5s ease-out;
+}
+
+@keyframes bar-fill--75 {
+  0%{ width:0%; }
+  100%{ width:75%; }
+}
+@-moz-keyframes bar-fill--75 {
+  0%{ width:0%; }
+  100%{ width:75%; }
+}
+@-webkit-keyframes bar-fill--75 {
+  0%{ width:0%; }
+  100%{ width:75%; }
+}
+.bar-fill-75{
+  width: 75%;
+  border-radius: 5px;
+  background-color: #ae3636;
+  animation: bar-fill--75 1.5s ease-out;
+  -moz-animation: bar-fill--75 1.5s ease-out;
+  -webkit-animation: bar-fill--75 1.5s ease-out;
+}
+
 @keyframes bar-fill-70 {
   0%{ width:0%; }
   100%{ width:70%; }
@@ -949,34 +976,15 @@ border-color: transparent transparent transparent #202426;
   0%{ width:0%; }
   100%{ width:70%; }
 }
-@keyframes bar-fill-75 {
-  0%{ width:0%; }
-  100%{ width:75%; }
-}
-@-moz-keyframes bar-fill-75 {
-  0%{ width:0%; }
-  100%{ width:75%; }
-}
-@-webkit-keyframes bar-fill-75 {
-  0%{ width:0%; }
-  100%{ width:75%; }
-}
-.bar-fill-chinese{
-  width: 75%;
+.bar-fill-70{
+  width: 70%;
   border-radius: 5px;
-  background-color: #ca1f1f;
-  animation: bar-fill--75 1.5s ease-out;
-  -moz-animation: bar-fill--75 1.5s ease-out;
-  -webkit-animation: bar-fill--75 1.5s ease-out;
+  background-color: #c04444;
+  animation: bar-fill-70 1.5s ease-out;
+  -moz-animation: bar-fill-70 1.5s ease-out;
+  -webkit-animation: bar-fill-70 1.5s ease-out;
 }
-.bar-fill-JS{
-  width: 65%;
-  border-radius: 5px;
-  background-color: #4e0b0b;
-  animation: bar-fill--65 1.5s ease-out;
-  -moz-animation: bar-fill--65 1.5s ease-out;
-  -webkit-animation: bar-fill--65 1.5s ease-out;
-}
+
 @keyframes bar-fill--65 {
   0%{ width:0%; }
   100%{ width:65%; }
@@ -989,42 +997,36 @@ border-color: transparent transparent transparent #202426;
   0%{ width:0%; }
   100%{ width:65%; }
 }
-.bar-fill-BS{
+.bar-fill-65{
   width: 65%;
   border-radius: 5px;
-  background-color:  #8f1414;
+  background-color: #cb4e4e;
   animation: bar-fill--65 1.5s ease-out;
   -moz-animation: bar-fill--65 1.5s ease-out;
   -webkit-animation: bar-fill--65 1.5s ease-out;
 }
-.bar-fill-php{
-  width: 35%;
+
+@keyframes bar-fill--45 {
+  0%{ width:0%; }
+  100%{ width:45%; }
+}
+@-moz-keyframes bar-fill--45 {
+  0%{ width:0%; }
+  100%{ width:45%; }
+}
+@-webkit-keyframes bar-fill--45 {
+  0%{ width:0%; }
+  100%{ width:45%; }
+}
+.bar-fill-45{
+  width: 45%;
   border-radius: 5px;
-  background-color:  #8f1414;
-  animation: bar-fill--35 1.5s ease-out;
-  -moz-animation: bar-fill--35 1.5s ease-out;
-  -webkit-animation: bar-fill--35 1.5s ease-out;
+  background-color:  #df5e5e;
+  animation: bar-fill--45 1.5s ease-out;
+  -moz-animation: bar-fill--45 1.5s ease-out;
+  -webkit-animation: bar-fill--45 1.5s ease-out;
 }
-@keyframes bar-fill-45 {
-  0%{ width:0%; }
-  100%{ width:45%; }
-}
-@-moz-keyframes bar-fill-45 {
-  0%{ width:0%; }
-  100%{ width:45%; }
-}
-@-webkit-keyframes bar-fill-45 {
-  0%{ width:0%; }
-  100%{ width:45%; }
-}
-.bar-fill-ai{
-  width: 35%;
-  border-radius: 5px;
-  background-color: #ca1f1f;
-  animation: bar-fill--35 1.5s ease-out;
-  -moz-animation: bar-fill--35 1.5s ease-out;
-  -webkit-animation: bar-fill--35 1.5s ease-out;
-}
+
 @keyframes bar-fill--35 {
   0%{ width:0%; }
   100%{ width:35%; }
@@ -1037,14 +1039,15 @@ border-color: transparent transparent transparent #202426;
   0%{ width:0%; }
   100%{ width:35%; }
 }
-.bar-fill-ex{
-  width: 65%;
+.bar-fill-35{
+  width: 35%;
   border-radius: 5px;
-  background-color: #8f1414;
-  animation: bar-fill--65 1.5s ease-out;
-  -moz-animation: bar-fill--65 1.5s ease-out;
-  -webkit-animation: bar-fill--65 1.5s ease-out;
+  background-color: #fc7474;
+  animation: bar-fill--35 1.5s ease-out;
+  -moz-animation: bar-fill--35 1.5s ease-out;
+  -webkit-animation: bar-fill--35 1.5s ease-out;
 }
+
 .wrapper-full{
   min-height: 100%;
 }
